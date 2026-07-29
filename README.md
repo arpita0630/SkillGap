@@ -69,7 +69,7 @@ Make sure you have the following installed:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/skillgap.git
+git clone https://github.com/arpita0630/SkillGap.git
 
 # 2. Navigate into the project folder
 cd skillgap
