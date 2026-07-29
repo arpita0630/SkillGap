@@ -219,7 +219,7 @@ export default function Analysis({
                       ? 'bg-primary text-white shadow-sm shadow-primary/20'
                       : 'bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-850 text-slate-600 dark:text-slate-400 hover:bg-slate-55 dark:hover:bg-slate-800'
                   }`}
-                  id={`filter-pill-${cat.toLowerCase().replace(' ', '-')}`}
+                  id={`filter-pill-${cat.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
                 >
                   {cat}
                 </button>
@@ -247,7 +247,7 @@ export default function Analysis({
                       ? 'border-primary bg-primary/[0.02] dark:bg-primary/[0.04] shadow-md shadow-primary/5' 
                       : 'border-slate-250/60 dark:border-slate-800/80 bg-white dark:bg-slate-900 hover:border-slate-350 dark:hover:border-slate-700'
                   }`}
-                  id={`skill-card-${skill.name.toLowerCase().replace('.', '-').replace(' ', '-')}`}
+                  id={`skill-card-${skill.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
                 >
                   {/* Indicators */}
                   <div className="flex items-center justify-between gap-2 mb-3">
