@@ -236,9 +236,7 @@ This project was built **using AI as a development assistant**. Here's a summary
 
 **Arpita Mishra**
 
-- 🎓 B.Tech Student — Graduating 2026
-- 💼 Aspiring Frontend / Full Stack Developer
-- 🤖 Building with AI as a development tool
+- 🎓 B.Tech Student — Graduating 2028
 
 ---
 
