@@ -69,8 +69,8 @@ export default function Profile({ initialProfile, onSaveProfile }) {
                 if (errors.name) setErrors(prev => ({ ...prev, name: '' }));
               }}
               placeholder="John Doe"
-              className={`w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-850 border rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300 ${
-                errors.name ? 'border-danger' : 'border-slate-200 dark:border-slate-800'
+              className={`w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-800 border rounded-xl text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300 ${
+                errors.name ? 'border-danger' : 'border-slate-200 dark:border-slate-700'
               }`}
             />
             {errors.name && (
@@ -90,7 +90,7 @@ export default function Profile({ initialProfile, onSaveProfile }) {
                 id="target-company"
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
-                className="w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300 text-slate-700 dark:text-slate-300"
+                className="w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300"
               >
                 {COMPANIES.map((c) => (
                   <option key={c} value={c}>{c}</option>
@@ -106,7 +106,7 @@ export default function Profile({ initialProfile, onSaveProfile }) {
                 id="target-role"
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
-                className="w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300 text-slate-700 dark:text-slate-300"
+                className="w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300"
               >
                 {ROLES.map((r) => (
                   <option key={r} value={r}>{r}</option>
@@ -124,7 +124,7 @@ export default function Profile({ initialProfile, onSaveProfile }) {
               id="grad-year"
               value={gradYear}
               onChange={(e) => setGradYear(e.target.value)}
-              className="w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300 text-slate-700 dark:text-slate-300"
+              className="w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300"
             >
               {YEARS.map((y) => (
                 <option key={y} value={y}>{y}</option>
@@ -151,7 +151,7 @@ export default function Profile({ initialProfile, onSaveProfile }) {
               onChange={(e) => setStudyHours(parseInt(e.target.value, 10))}
               className="w-full h-2 bg-slate-100 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-primary"
             />
-            <div className="flex justify-between text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">
+            <div className="flex justify-between text-[10px] text-slate-500 dark:text-slate-300 font-bold uppercase">
               <span>1 Hour</span>
               <span>40 Hours</span>
             </div>
